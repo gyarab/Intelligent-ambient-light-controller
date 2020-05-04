@@ -1,0 +1,59 @@
+{
+    "name": "arduinoFFT", 
+    "repository": {
+        "url": "https://github.com/kosme/arduinoFFT.git", 
+        "type": "git"
+    }, 
+    "platforms": [
+        "atmelavr", 
+        "atmelmegaavr", 
+        "atmelsam", 
+        "espressif32", 
+        "espressif8266", 
+        "freescalekinetis", 
+        "gd32v", 
+        "infineonxmc", 
+        "intel_arc32", 
+        "kendryte210", 
+        "maxim32", 
+        "microchippic32", 
+        "nordicnrf51", 
+        "nordicnrf52", 
+        "nxplpc", 
+        "riscv_gap", 
+        "siliconlabsefm32", 
+        "ststm32", 
+        "ststm8", 
+        "teensy", 
+        "timsp430", 
+        "wiznet7500"
+    ], 
+    "frameworks": [
+        "espidf", 
+        "mbed", 
+        "arduino"
+    ], 
+    "version": "1.5.5", 
+    "authors": [
+        {
+            "maintainer": true, 
+            "name": "Enrique Condes", 
+            "url": null, 
+            "email": "enrique@shapeoko.com"
+        }, 
+        {
+            "maintainer": false, 
+            "name": "Didier Longueville", 
+            "url": "http://www.arduinoos.com/", 
+            "email": "contact@arduinoos.com"
+        }
+    ], 
+    "keywords": [
+        "fft", 
+        "frequency", 
+        "fdt", 
+        "fourier"
+    ], 
+    "id": 1651, 
+    "description": "A library for implementing floating point Fast Fourier Transform calculations."
+}
