@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "934837558666",
+    "firebase_url": "https://smart-light-1e0af.firebaseio.com",
+    "project_id": "smart-light-1e0af",
+    "storage_bucket": "smart-light-1e0af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934837558666:android:53b8198e4631b9bfd67c73",
+        "android_client_info": {
+          "package_name": "com.cubanstudio.smartlight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934837558666-017aumd7q1d3vo45ujpv9g62v5ft77e6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOpin0uoGSDCwxuzpo4ZO_Ax1Ru4JZ5XY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934837558666-017aumd7q1d3vo45ujpv9g62v5ft77e6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

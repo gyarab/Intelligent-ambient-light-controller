@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:theme="@style/Base.Theme">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/POST"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+
+        android:fontFamily="@font/raleway_semibold"
+        android:text="POST"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+
+        app:backgroundTint="#00000000"
+        app:cornerRadius="25dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="1dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="Smart Light"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/deviceRight"
+            app:layout_constraintStart_toEndOf="@+id/deviceLeft"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deviceLeft"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:backgroundTint="#00000000"
+            app:icon="@drawable/ic_arrow_left"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+android:visibility="invisible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#00000000"
+            app:strokeWidth="0dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deviceRight"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="invisible"
+            app:backgroundTint="#00000000"
+            app:icon="@drawable/ic_arrow_right"
+            app:iconGravity="end"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#00000000"
+            app:strokeWidth="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/adddevice"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/raleway_semibold"
+
+            android:text="Add Device"
+            android:textColor="#FFFFFF"
+            android:visibility="visible"
+            app:backgroundTint="#00000000"
+            app:cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/deviceRight"
+            app:layout_constraintStart_toEndOf="@+id/deviceLeft"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#FFFFFF"
+            app:strokeWidth="1dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="8dp"
+
+        android:clickable="false"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout10"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_enableMergePathsForKitKatAndAbove="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/lightbulb" />
+
+<com.google.android.material.slider.Slider
+    android:id="@+id/SPEEDslider"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:theme="@style/Base.Theme"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:valueFrom="0.0"
+    android:valueTo="20.0"
+    app:haloColor="#00000000"
+    app:labelBehavior="gone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/constraintLayout10"
+
+    app:thumbColor="#BBFFFFFF"
+    app:trackColor="#44777777"
+    app:trackHeight="1px"
+    app:thumbRadius="0dp"
+    />
+    <com.google.android.material.slider.Slider
+        android:id="@+id/HUEslider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:theme="@style/Base.Theme"
+        android:valueFrom="0.0"
+        android:valueTo="1.0"
+        app:haloColor="#00000000"
+        app:labelBehavior="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/anim"
+
+        app:thumbColor="#FFFFFF"
+        app:trackColor="#FFFFFF"
+        app:trackHeight="2dp"
+        app:thumbRadius="0dp"/>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/SATslider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:theme="@style/Base.Theme"
+        android:valueFrom="0.0"
+        android:valueTo="1.0"
+        app:haloColor="#00FFFFFF"
+        app:labelBehavior="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/HUEslider"
+
+        app:thumbColor="#FFFFFF"
+        app:trackColor="#FFFFFF"
+        app:trackHeight="2dp"
+        app:thumbRadius="0dp"/>
+
+    <com.google.android.material.slider.Slider
+        android:stepSize="1"
+
+        android:id="@+id/LIGslider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:rotation="270"
+        android:translationX="150dp"
+        app:haloColor="#00FFFFFF"
+        app:layout_constraintVertical_bias="0.6"
+        app:layout_constraintBottom_toBottomOf="@id/anim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/anim"
+        app:thumbColor="#99999999"
+        app:trackColor="#99999999"
+        app:trackHeight="2dp"
+        app:thumbRadius="0dp"
+        android:valueFrom="90"
+        android:valueTo="136"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SATslider">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/effectleft"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:backgroundTint="#00000000"
+            app:icon="@drawable/ic_arrow_left"
+            app:iconGravity="start"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#00000000"
+            app:strokeWidth="0dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/effectright"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:backgroundTint="#00000000"
+            app:icon="@drawable/ic_arrow_right"
+            app:iconGravity="end"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#00000000"
+            app:strokeWidth="0dp" />
+
+        <TextView
+            android:id="@+id/effectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="SOLID"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/effectright"
+            app:layout_constraintStart_toEndOf="@+id/effectleft"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

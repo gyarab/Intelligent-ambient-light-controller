@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Smart Light</string>
+    <string name="target_device">Smart Light</string>
+    <string name="red">Red light</string>
+    <string name="white">White light</string>
+    <string name="blue">Blue light</string>
+    <string name="pink">Pink</string>
+    <string name="yellow">Yellow</string>
+    <string name="purple">Purple</string>
+    <string name="green">Green</string>
+    <string name="orange">Orange</string>
+    <string name="lightblue">Light Blue</string>
+    
+    <string name="IPadress">IPADRESS</string>
+    
+    
+
+</resources>

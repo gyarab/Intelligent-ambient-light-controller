@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actions>
+    <action intentName="actions.intent.OPEN_APP_FEATURE">
+        <fulfillment urlTemplate="https://svetylka.page.link/color{?color}">
+            <parameter-mapping
+                intentParameter="feature"
+                urlParameter="color">
+
+            </parameter-mapping>
+
+        </fulfillment>
+        <parameter name="feature">
+            <entity-set-reference entitySetId="FeatureSet"/>
+        </parameter>
+    </action>
+
+    <entity-set entitySetId="FeatureSet">
+        <entity
+        name= "@string/red"
+        identifier="RED"/>
+        <entity
+            name= "@string/white"
+            identifier="WHITE"/>
+        <entity
+            name= "@string/blue"
+            identifier="BLUE"/>
+        <entity
+            name= "@string/pink"
+            identifier="PINK"/>
+        <entity
+            name= "@string/yellow"
+            identifier="YELLOW"/>
+        <entity
+            name= "@string/purple"
+            identifier="PURPLE"/>
+        <entity
+            name= "@string/green"
+            identifier="GREEN"/>
+        <entity
+            name= "@string/orange"
+            identifier="ORANGE"/>
+        <entity
+            name= "@string/lightblue"
+            identifier="LIGHT BLUE"/>
+    </entity-set>
+</actions>
